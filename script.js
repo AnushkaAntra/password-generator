@@ -48,7 +48,7 @@ let input = document.getElementById("input")
 let r1 = document.getElementById("weak")
 let r2 = document.getElementById("strong")
 let r3 = document.getElementById("very_strong")
-let btn2 = document.getElementById("btn2")
+let btn2 = document.getElementById("btn1")
 btn2.addEventListener("click", function(){
     let a = new password()
     let b = a.strong_pass(random(8,30))
@@ -74,4 +74,8 @@ btn1.addEventListener("click",function(){
     else{
       alert("The text field is empty")
     }
+})
+let btn3 = document.getElementById("btn2")
+btn3.addEventListener("click", function(){
+    input.setAttribute("value","")
 })
